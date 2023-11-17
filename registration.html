@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Anggota | Perpustakaan Neo Historia</title>
+    <link rel="icon" type="icon" href="images/neohistlogo.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/fbfa0f6133.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="navbar">
+                <ul class="nav-links">
+                    <div class="nav-logo">
+                        <a href="index.html">
+                            <img src="images/logooo.png" alt="logo">
+                        </a>
+                    </div>
+                    <li class="nav-link">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#gallery">Galeri</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="registration.html" style="text-decoration: underline;" >Daftar Anggota</a>
+                    </li>
+                    <li class="nav-link about">
+                        <a href="#">Tentang Kami
+                            <span><i class="fa-solid fa-caret-down dropdown-icon"></i></span>    
+                        </a>
+                        <ul class="drop-down">
+                            <li><a href="about.html">Profil</a></li>
+                            <li><a href="about.html">Sejarah</a></li>
+                            <li><a href="about.html">Visi & Misi</a></li>
+                            <li><a href="about.html">Struktur Organisasi</a></li>
+                        </ul>                      
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="register">
+        <div class="registration">
+            <div class="right-side">
+                <h1>Bergabunglah Bersama Kami <hr></h1>
+                <p>Jadilah bagian dari komunitas pembelajar yang dinamis dengan mendaftar sebagai anggota perpustakaan kami. Dengan mengisi formulir di bawah, kini Anda dapat mengakses pengetahuan tentang sejarah secara eksklusif.</p>
+                <form id="regist">
+                    <div class="form-input-box">
+                        <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="form-input-box">
+                        <input type="date" id="ttl" name="ttl" placeholder="Tanggal Lahir" required>
+                    </div>
+                    <div class="form-input-box">
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-input-box">
+                        <input type="number" id="phone" name="phone" placeholder="No. Telp" required>
+                    </div>
+                    <div class="form-input-box message-box">
+                        <textarea id="alamat" name="alamat" placeholder="Alamat" required></textarea>
+                    </div>
+                    <div class="form-button" onclick="kirimData();">
+                        <input type="button" value="Daftar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <p><b>&copy; 2023</b> Perpustakaan Neo Historia | Designed by <b>Diah Pitaloka Yanuar</b> | <a href="index.html" target="_blank">www.neohistorialib.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,629 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+h1{
+    color: #531614;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.nav-container{
+    display: flex;    
+    font-size: 18px;
+}
+
+.navbar{
+    width: 100%;
+    background-color: #f7f7f7;
+    box-shadow:  0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #741F1C;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 16px;
+}
+
+.nav-logo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+}
+
+.nav-logo img{
+    width: 145px;
+    height: auto;
+}
+
+
+.nav-link, .drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 8px 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.drop-down{
+    position: absolute;
+    padding: 8px 0;
+    margin: 8px -8px;
+    background-color: #f7f7f7;
+    color: #741F1C;
+    border-radius: 8px;
+    font-size: 12px;
+    display: none;
+}
+
+.nav-link:hover{
+    background-color: #741F1C;
+    color: #f7f7f7;
+    border-radius: 8px;
+}
+
+.about:hover .drop-down{
+    display: block;
+    background-color: #ffb6b3;
+    color: #1d1d1d;
+}
+
+.about a{
+    display: flex;
+    align-items: center;
+}
+
+.about .dropdown-icon{
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.about:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+.drop-down li:hover{
+    background-color: #f7f7f7;
+    color: #741F1C;
+    border-radius: 8px;
+}
+/* navbar end */
+
+/* image homepage */
+.hero img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* image homepage end */
+
+/* Main */
+main{
+    margin: 10px auto;
+    padding: 20px;
+    display: inline-block;
+}
+
+.box{
+    margin-bottom: 80px;
+}
+
+/* Content */
+#content{
+    float: left;
+    width: 75%;
+}
+
+.content{
+    padding: 20px;
+}
+
+.content h1{
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+/* Title Section */
+#title{
+    margin-bottom: 50px;
+}
+
+#title h1{
+    font-size: 33px;
+}
+
+#title .subtext{
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: justify;
+    margin-right: 15px;
+}
+
+/* Artikel Section */
+#artikel .artikel{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 37px;
+}
+
+#artikel .artikel .artikel-flex{
+    width: 30%;
+    height: auto;
+}
+
+#artikel .artikel .artikel-flex p{
+    font-size: 14px;
+}
+
+#artikel .artikel .artikel-flex img{
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#artikel .artikel .artikel-flex a{
+    color: #741F1C;
+    font-size: 14px;
+    margin: 16px 0;
+    padding: 8px;
+    text-decoration: underline;
+}
+
+/* Buku Section */
+.books{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.books .book{
+    width: 20%;
+    height: fit-content;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 16px auto;
+    border-radius: 10px;
+}
+
+.books .book a{
+    color: #5a1816;
+}
+
+.books .book .detail-book{
+    margin: 16px;
+    font-size: small;
+}
+
+.books .book .detail-book p{
+    color: gray;
+    font-weight: 400;
+}
+
+.featured-image {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Gallery Section */
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    column-gap: 110px;
+    row-gap: 20px;
+    justify-content: left;
+    margin-left: 65px;
+    text-align: center;
+}
+
+.gallery img{
+    width: 130%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+/* Contact Section */
+.form-container{
+    margin: 25px;
+}
+ 
+.form-container .form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.form-container .form-content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+ 
+.form-content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #741F1C;
+}
+ 
+.form-content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+ 
+.form-content .left-side .details i{
+    font-size: 30px;
+    color: #741F1C;
+    margin-bottom: 10px;
+}
+ 
+.form-content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+ 
+.form-content .left-side .details .text-one,
+.form-content .left-side .details .text-two,
+.right-side p{
+    font-size: 14px;
+    color: #afafb6;
+    text-align: justify;
+}
+
+.form-content .left-side .details .text-one, .text-two p{
+    text-align: center;
+}
+ 
+.form-container .form-content .right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+ 
+.form-content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #1d1d1d;
+}
+ 
+.right-side .form-input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+ 
+.right-side .form-input-box input,
+.right-side .form-input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #e1e1e5;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+ 
+.right-side .message-box{
+    min-height: 110px;
+}
+ 
+.right-side .form-input-box textarea{
+    padding-top: 6px;
+}
+ 
+.right-side .form-button{
+    display: inline-block;
+    margin-top: 12px;
+}
+ 
+.right-side .form-button input[type="button"]{
+    color: #f7f7f7;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #741F1C;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+   
+.form-button input[type="button"]:hover{
+    background: #333;
+}
+
+
+/* Aside Section */
+aside{
+    float: right;
+    width: 25%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+aside p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+aside a{
+    color: #531614;
+}
+
+
+aside .logo, .video, .location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+aside .logo a img{
+    width: 100%;
+}
+
+aside .links-sosmed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #741F1C;
+    color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+
+}
+
+/* About page start */
+#about-container{
+    margin: auto;
+    width: 70%;
+}
+
+#about-container h1 {
+    font-size: 28px;
+}
+
+#about-container h3 {
+    font-size: 24px;
+    margin: 8px 0px;
+}
+
+#about-container p, ol{
+    font-size: 20px;
+}
+
+#about-container hr{
+    margin-bottom: 24px;
+}
+
+.profil .profil-detail{
+    align-items: center;
+    justify-content: center;
+}
+
+.profil .profil-detail,
+.visimisi .visimisi-detail{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.profil .profil-detail .profil-flex,
+.visimisi .visimisi-detail .visimisi-flex{
+    width: 50%;
+}
+
+.profil .profil-detail .profil-flex img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.profil .profil-detail .profil-flex p{
+    margin: 16px 0;
+    text-align: justify;
+}
+
+.visimisi .visimisi-detail .visimisi-flex ol{
+    margin-left: 20px;
+}
+
+.sejarah{
+    text-align: justify;
+}
+
+.sejarah img{
+    width: 100%;
+    max-height: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.sejarah p{
+    margin: 16px 0;
+}
+
+
+.struktur img{
+    margin-top: 8px;
+    margin-left: 65px;
+    display: block;
+    width: 85%;
+}
+/* About page end */
+
+/* Registration page start */
+
+#register{
+    margin: 24px auto;
+    width: 70%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration .right-side h1{
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.registration .right-side p{
+    margin-bottom: 24px;
+    font-size: 15px;
+}
+/* Registration page end */
+
+/* Kegiatan page start */
+#kegiatan{
+    margin: 24px auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kegiatan{
+    padding: 24px;
+}
+
+.kegiatan hr{
+    margin-bottom: 24px
+}
+
+.kegiatan img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+.kegiatan p{
+    margin-bottom: 24px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Kegiatan page end */
+
+/* Koleksi AV page start*/
+#audiovisual{
+    margin: 24px auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audiovisual{
+    padding: 24px;
+}
+
+.audiovisual hr{
+    margin-bottom: 24px
+}
+
+.img1 {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+.audiovisual p{
+    margin-bottom: 24px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.img2 {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+/* Koleksi AV page end*/
+
+/* Austronesia page start */
+#austronesia{
+    margin: 24px auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.austronesia{
+    padding: 24px;
+}
+
+.austronesia hr{
+    margin-bottom: 24px
+}
+
+.img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+.austronesia p{
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    text-align: justify;
+}
+/* Austronesia page end */
